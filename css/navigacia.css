@@ -1,0 +1,79 @@
+
+header{
+    width: 100%;
+    position: absolute;
+}
+
+ul{
+    list-style: none;
+    background-color: black !important;
+}
+
+.home{
+    padding-left: 50px;
+    background-color: none;
+    font-size: 15px;
+}
+
+.home:hover{
+    background-color: black !important;
+}
+
+ul li{
+    display: inline-block;
+    position: relative;
+}
+
+ul li a{
+    display: block;
+    padding: 20px 25px;
+    color: azure;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+}
+
+ul li ul.dropdown li{
+    display: block;
+}
+
+ul li ul.dropdown{
+    padding-top: 10px;
+    width:140%;
+    height: 100vw;
+    background-color: black;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:hover{
+    background-color: rgba(113, 108, 108, 0.414) ;
+}
+
+ul li:hover ul.dropdown{
+    display: block;}
+
+.logo{
+    width: 100px !important;
+    float: right;
+    margin-top: 7px;
+    padding-right: 5%;
+    }
+
+/*zlomy*/
+@media (min-width:750px){
+    .home{
+        padding-left: 80px;
+        font-size: 20px;
+    }
+
+    ul li ul.dropdown{
+        background-image: linear-gradient(black, gray);
+    }
+    .logo{
+        width: 130px !important; 
+    }
+}
+
+

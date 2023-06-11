@@ -1,0 +1,175 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/*zakladnde css pre leyaut*/
+body{
+    background-color: black !important;
+    color: white !important;
+}
+
+section{
+    margin: 0 12%;
+    padding: 4% ;
+    border-radius: 25px;
+    background: url(../fotky/jjj.jpg);
+    background-size: cover;
+    border: 2px solid white;
+    background-position: 45%;
+}
+
+main{
+    padding-top: 10rem;
+    padding-bottom: 20%;
+}
+
+/*oprava navigacie*/
+.logo1{
+    width: 120px;
+    float: right;
+    margin-top: 3px;
+    padding-right: 8%;
+}
+
+.menu1{
+    padding-left: 13.5px;
+    background-color: none;
+    font-size: 0.9rem;
+}
+
+ul li ul.dropdown1{
+    text-align: center;
+    margin-left: -60px;
+    padding-top: 10px;
+    width:200%;
+    height: 100vw;
+    background-color: black;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ul li:hover ul.dropdown1{
+    display: block;}
+
+ul li ul.dropdown li{
+        display: block;
+    }
+    
+.home1:hover{
+        background-color: black !important;
+    }
+@media (min-width:750px){
+    section{
+        margin: 0% 35%;
+        background-position: 10%;
+        }
+
+
+    ul li ul.dropdown1{
+        background-image: linear-gradient(black, gray);
+        width:160%;
+        margin-left: -45px;
+        padding-top: 10px;
+    }
+
+    .menu1{
+        font-size: 1.2rem;
+        padding-left: 50px;
+    }
+
+    .logo1{
+        width:  250px;
+    }
+   
+}
+
+@media (max-width:750px){
+    ul li ul.dropdown1{
+        height: 280px;
+    }
+}
+
+/*formular*/
+.text{
+    max-height: 100px;
+}
+
+.form-text{
+    color: white !important;
+}
+
+
+.medzera{
+    margin-top: 20px !important;
+}
+
+.btn-primary{
+    margin-top: 20px;
+}
+
+h1{
+    font-size: 200% !important;
+    padding-bottom: 10%;
+    text-align: center;
+    margin: 0 auto;
+    color: red !important;
+    text-shadow: rgb(196, 112, 112) 1.5px 0.5px  ;}
+
+
+/*footer*/
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 95vw;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem 0 1rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: red;
+}
+
+footer{
+    background: #000;
+    width: 95vw;
+    padding: 20px 0;
+    text-align: center;
+}
+footer p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    margin-left: 35px;
+}
+footer span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+

@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background-color: black;
+}
+
+/*zakladnde css pre leyaut*/
+main{
+    padding-top: 330px;
+    background-image: url(../fotky/jjj.jpg);
+    height:  40vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 600px;
+}
+
+
+.nadpis{
+    margin-bottom: 70%;
+    color: red;
+    margin-left: 10%;
+    font-size: 30px;
+    margin-top: -200px;
+    text-shadow: rgb(196, 112, 112) 2px 3px 5px ;
+}
+
+
+
+/*odpocet*/
+
+.container{ 
+    padding-top: 100px;
+    color: #cac1c1;
+    text-align: center;
+}
+.od_nadpis{
+    font-weight: normal;
+    letter-spacing: .125rem;
+    text-transform: uppercase;
+}
+
+.sectino2 li{
+    font-size: 1.5rem;
+    list-style-type:none ;
+    padding: 1em;
+    text-transform: uppercase;
+}
+
+li span{
+    display: block;
+    font-size: 4.5rem;
+
+}
+
+.emoji{
+    display: none;
+    padding: 1rem;
+}
+
+.emoji span{
+    font-size: 4rem;
+    padding: 0 .5rem;
+}
+
+/*zlomy*/
+
+@media (min-width:750px) {
+    .nadpis{
+       font-size: 50px;
+       margin-left: 3%;
+    }
+
+    .container{
+        margin-top: -25%;
+    }
+    main{
+        margin-bottom: 450px;
+    }
+    
+}
+
+@media (min-width:950px){
+    .nadpis-2{
+        float: right;
+        margin-top: 100px;
+        margin-right: 8%;
+        font-size: 100px;
+    }
+
+    .nadpis-1{
+        font-size: 80px;
+        margin-top: 50px;
+        margin-left: 8%;
+    }
+
+    .container{
+        padding-top: 100px;
+    }
+
+}
+
+/*footer*/
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 95vw;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem 0 1rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: red;
+}
+
+footer{
+    background: #000;
+    width: 95vw;
+    padding: 20px 0;
+    text-align: center;
+}
+footer p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+footer span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
